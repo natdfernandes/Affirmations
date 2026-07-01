@@ -1,5 +1,6 @@
 package com.example.affirmations
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -64,6 +65,7 @@ fun AffirmationList(affirmationList: List<Affirmation>, modifier: Modifier = Mod
     }
 }
 
+@SuppressLint("LocalContextGetResourceValueCall")
 @Composable
 fun AffirmationCard(affirmation: Affirmation, modifier: Modifier = Modifier) {
     Card(modifier = modifier) {
